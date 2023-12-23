@@ -75,3 +75,29 @@
 - **DELETE /api/news/remove?id=:id**
   - Delete a blog by its ID.
   - Request parameter: `id` (ID of the news)
+
+## Technologies Used
+
+The backend of the project utilizes the following technologies:
+
+- **Node.js with Express:** Provides the server-side framework for building RESTful APIs.
+
+- **JWT (JSON Web Tokens):** Ensures secure user authentication.
+
+- **Database:**
+  - **MongoDB:** Stores tasks and user data.
+ 
+### Project Configuration
+
+Before you can run this project, you need to set up some environment variables. Create an `.env` file in the project root and add the following variables:
+
+- `PORT`: 8000
+- `MONGO_URI`: your_mongodb_connection_uri
+- `ACCESS_TOKEN_SECRET`: your_secret_key_for_jwt
+
+## Usage
+
+1. Run `git clone https://github.com/bobbyrepo/neoma-backend` to clone the repository to your local machine.
+2. Run `npm install` to install the project dependencies.
+3. Run `nodemon server.js` to start the development server.
+4. Open your browser and visit `http://localhost:PORT`.
