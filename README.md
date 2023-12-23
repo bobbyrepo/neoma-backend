@@ -53,6 +53,9 @@
 
 ### News Articles
 
+- **POST /api/news/add-from-API**
+  - Fetch news from thirtd-party API and add it to our database.
+
 - **GET /api/news/get-all**
   - Retrieve a list of news.
   
