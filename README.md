@@ -88,7 +88,7 @@ The backend of the project utilizes the following technologies:
 - **JWT (JSON Web Tokens):** Ensures secure user authentication.
 
 - **Database:**
-  - **MongoDB:** Stores tasks and user data.
+  - **MongoDB:** Stores blog posts, news and user data.
  
 ### Project Configuration
 
