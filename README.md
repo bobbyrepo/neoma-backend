@@ -50,3 +50,28 @@
   - Request parameter: `id` (ID of the blog)
   - Headers:
     - `Authorization: Bearer your_access_token_here`
+
+### News Articles
+
+- **GET /api/news/get-all**
+  - Retrieve a list of news.
+  
+- **POST /api/news/add**
+  - Create a new news.
+  - Request body:
+    (author, title, description, content, url, urlToImage, publishedAt, source, category)
+   
+- **GET /api/news/search?search=:string****
+  - Search for a news by title or body.
+  
+- **PUT /api/news/edit?id=:id**
+  - Update an existing news by its ID.
+  - Request parameter: `id` (ID of the news)
+  - Request body:
+    (author, title, description, content, url, urlToImage, publishedAt, source, category)
+    can also add category
+
+
+- **DELETE /api/news/remove?id=:id**
+  - Delete a blog by its ID.
+  - Request parameter: `id` (ID of the news)
