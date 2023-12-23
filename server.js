@@ -14,10 +14,12 @@ app.use(cors());
 
 const usersRoute = require("./modules/users/router");
 const blogsRoute = require("./modules/blogs/router");
+const newsRoute = require("./modules/news/router");
 require("./database").connect();
 
 app.use("/api/users", usersRoute);
 app.use("/api/blogs", authenticateToken, blogsRoute);
+app.use("/api/news", newsRoute);
 
 app.get("/api", (req, res) => {
   res.send("Api Working!");

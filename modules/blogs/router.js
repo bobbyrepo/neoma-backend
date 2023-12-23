@@ -15,14 +15,14 @@ router.get("/search", async (req, res) => {
   await searchBlog(req, res);
 });
 
-router.post("/addblog", async (req, res) => {
+router.post("/add", async (req, res) => {
   await addBlog(req, res);
 });
 
-router.put("/editblog", async (req, res) => {
+router.put("/edit", async (req, res) => {
   await editBlog(req, res);
 });
-router.delete("/removeblog", async (req, res) => {
+router.delete("/remove", async (req, res) => {
   await removeblog(req, res);
 });
 
